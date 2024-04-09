@@ -10,6 +10,9 @@ import StepsLayout from "../components/StepsLayout";
 import FAQ from "@/app/components/FAQ/FAQ";
 import { FAQPage, WithContext } from "schema-dts";
 import Script from "next/script";
+import Head from "next/head";
+import { Metadata } from "next";
+import { BASE_URL } from "@/constant";
 
 const table_of_content = [
   { text: "Designing luxury bathrooms", link: "#Designing luxury bathrooms" },
@@ -82,6 +85,17 @@ const jsonLd: WithContext<FAQPage> = {
       },
     },
   ],
+};
+
+export const metadata: Metadata = {
+  title: "Ultimate Guide to Designing Your Dream Luxury Bathroom",
+  description:
+    "Discover the Ultimate Guide to Designing Your Dream Luxury Bathroom. Transform your modern bathroom with Premium Bathware. Click to explore!",
+  metadataBase: new URL(`${BASE_URL}`),
+  alternates: {
+    canonical:
+      BASE_URL + "/blogs/ultimate-guide-designing-dream-luxury-bathroom",
+  },
 };
 
 function page() {
