@@ -26,7 +26,7 @@ function Navbar() {
   };
 
   return (
-    <header className="w-[100%] bg-[#ffffff] fixed h-[60px] mx-auto z-10 px-20 sm:px-2">
+    <header className="w-[100%] bg-[#ffffff] fixed h-[60px] z-10 px-20 sm:px-2 md:px-5">
       <div className="w-full relative h-[60px] flex items-center">
         <div className="sm:flex-grow">
           <Link

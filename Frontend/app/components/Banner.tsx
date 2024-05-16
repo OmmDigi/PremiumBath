@@ -26,6 +26,7 @@ function Banner() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoaded(true);
+      
     }, 1000); // Delay before starting the animation
 
     // Clear the timer on component unmount to avoid memory leaks

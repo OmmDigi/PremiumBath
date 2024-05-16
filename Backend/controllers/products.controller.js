@@ -111,12 +111,18 @@ const storeData = async (req, res) => {
   // const values = data.map(obj => [obj.field1, obj.field2]);
 
   const values = demo.map((item) => [
-    item.title,
-    item.subtitle,
-    item.productsimg,
+    item.TITLE,
+    item.PRICE,
+    "",
+    item.DATE.toString(),
+    item.TIME,
+    item.DESCRIPTION,
+    item.TOUR_TYPE,
+    item.IMG
   ]);
 
-  const sql = "INSERT INTO basin (title, subtitle, productsimg) VALUES ?";
+  // const sql = "INSERT INTO basin (title, subtitle, productsimg) VALUES ?";
+  const sql = "INSERT INTO tour (TITLE, PRICE, TAGS, DATE, TIME, DESCRIPTION, TOUR_TYPE, IMG) VALUES ?"
 
   const result = await query(sql, [values]);
   res.send("Done");
