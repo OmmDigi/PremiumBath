@@ -70,10 +70,11 @@ function FormDialog() {
       <Input
         referal={numberRef}
         placeholder="Phone number"
-        type="number"
+        type="text"
         name="number"
         inputMode="numeric"
         pattern="[0-9\s]{13,19}"
+        title="Please enter a valid 10 digit phone number"
         className="fadeInAnimation sm:text-sm"
       />
       <textarea
