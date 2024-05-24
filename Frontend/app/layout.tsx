@@ -40,7 +40,7 @@ export default function RootLayout({
       </head>
       <body
         cz-shortcut-listen="true"
-        className={inter.className + "overflow-y-hidden bg-[#F5F5F5]"}
+        className={inter.className + "overflow-y-hidden bg-[#F5F5F5] max-w-[1500px] mx-auto"}
       >
         <MyProvider child={children} />
       </body>
