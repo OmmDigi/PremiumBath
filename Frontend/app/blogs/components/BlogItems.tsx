@@ -14,7 +14,7 @@ function BlogItems({ item }: IProps) {
   return (
     <li className="w-full cursor-pointer">
       <Link href={"./blogs/" + item.route}>
-        <Image src={item.bannerimg} alt="blog-img" width={1280} height={1280} />
+        <Image className="h-[48%] object-cover" src={item.bannerimg} alt="blog-img" width={1280} height={1280} />
         <h2 className="font-semibold text-xl text-gray-700 text-justify pt-3">
           {item.title}
         </h2>
@@ -31,7 +31,7 @@ function BlogItems({ item }: IProps) {
           <span className="font-medium">{item.author}</span>
         </div>
 
-        <p className="text-[0.9rem] pt-1 text-gray-600 blurFadeLayout">
+        <p className="text-[0.9rem] pt-1 text-gray-600 blurFadeLayout line-clamp-3">
           {item.description}
         </p>
         <button

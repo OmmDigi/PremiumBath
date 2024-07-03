@@ -4,13 +4,11 @@ import TableOfContents from "../components/TableOfContents";
 import P from "../components/P";
 import H2 from "../components/H2";
 import ReadBlogLayout from "../components/ReadBlogLayout";
-import { blogsLists } from "@/app/datas/blogsInfo";
 import { generateLinkHtml } from "@/utils/generateLinkHtml";
 import StepsLayout from "../components/StepsLayout";
 import FAQ from "@/app/components/FAQ/FAQ";
 import { FAQPage, WithContext } from "schema-dts";
 import Script from "next/script";
-import Head from "next/head";
 import { Metadata } from "next";
 import { BASE_URL } from "@/constant";
 
@@ -109,14 +107,9 @@ function page() {
         }}
       />
       <ReadBlogLayout
-        heading={blogsLists[0].title}
-        bannerimage={blogsLists[0].bannerimg}
-        shortdescription={blogsLists[0].description}
-        author={blogsLists[0].author}
-        catname={blogsLists[0].catgory}
-        date={blogsLists[0].date}
+       id={1}
       >
-        <TableOfContents contents_list={table_of_content} />
+        {/* <TableOfContents contents_list={table_of_content} /> */}
 
         <P
           className="mt-5"
