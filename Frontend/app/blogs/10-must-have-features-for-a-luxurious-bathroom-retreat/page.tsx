@@ -1,5 +1,18 @@
 import React from "react";
 import ReadBlogLayout from "../components/ReadBlogLayout";
+import { Metadata } from "next";
+import { BASE_URL } from "@/constant";
+
+export const metadata: Metadata = {
+  title: "10 Must-Have Features for a Luxurious Bathroom Retreat",
+  description: "",
+  metadataBase: new URL(`${BASE_URL}`),
+  alternates: {
+    canonical:
+      BASE_URL + "/blogs/10-must-have-features-for-a-luxurious-bathroom-retreat",
+  },
+};
+
 
 export default function page() {
   return (

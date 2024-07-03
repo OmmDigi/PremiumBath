@@ -1,5 +1,17 @@
 import React from "react";
 import ReadBlogLayout from "../components/ReadBlogLayout";
+import { Metadata } from "next";
+import { BASE_URL } from "@/constant";
+
+export const metadata: Metadata = {
+  title: "Luxury Bathroom Trends: What's In And What's Out For 2024",
+  description: "",
+  metadataBase: new URL(`${BASE_URL}`),
+  alternates: {
+    canonical:
+      BASE_URL + "/blogs/luxury-bathroom-trends-whats-in-and-whats-out-for-2024",
+  },
+};
 
 export default function page() {
   return (
