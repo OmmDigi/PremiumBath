@@ -35,14 +35,14 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
           rel="stylesheet"
         ></link>
-
-        
       </head>
       <body
         cz-shortcut-listen="true"
-        className={inter.className + "overflow-y-hidden bg-[#F5F5F5] max-w-[1500px] mx-auto"}
+        className={inter.className + "overflow-y-hidden bg-[#F5F5F5]"}
       >
-        <MyProvider child={children} />
+        <div className="max-w-[1500px] mx-auto">
+          <MyProvider child={children} />
+        </div>
       </body>
     </html>
   );

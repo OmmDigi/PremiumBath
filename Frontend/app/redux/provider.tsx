@@ -12,7 +12,7 @@ import ScrollToTopBtn from "../components/ScrollToTopBtn";
 export function MyProvider({ child }: any) {
   return (
     <Provider store={store}>
-      <div className="w-full h-[100vh] overflow-hidden overflow-y-scroll">
+      <div className="w-full h-[100vh]">
         <FloatingBtn />
         <MobileNav />
         <PopupDialogLayout />
