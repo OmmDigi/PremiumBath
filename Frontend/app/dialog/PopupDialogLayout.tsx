@@ -7,7 +7,7 @@ function PopupDialogLayout() {
   const popupDialog = useSelector((state: RootState) => state.popupDialog);
   return (
     <div
-      className={`absolute top-0 bottom-0 py-14 sm:py-20 right-0 left-0 bg-[#00000046] h-full w-full z-20 ${
+      className={`fixed top-0 bottom-0 py-14 sm:py-20 right-0 left-0 bg-[#00000046] h-full w-full z-20 ${
         popupDialog ? "flex" : "hidden"
       } items-center justify-center`}
     >
