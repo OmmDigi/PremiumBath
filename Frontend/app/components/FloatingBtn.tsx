@@ -31,7 +31,7 @@ function FloatingBtn() {
   }
 
   return (
-    <div className="absolute bottom-14 right-20 z-10 flex flex-col gap-4 items-center sm:right-6">
+    <div className="fixed bottom-14 right-20 z-10 flex flex-col gap-4 items-center sm:right-6">
       <h2
         className={`absolute w-32 px-5 text-[#1A1A1A] py-1 right-10 bottom-12 messageShape flex items-center justify-center font-semibold bg-[#34D399] ${
           otherBtnVisibility ? "scale-0" : "scale-1"
