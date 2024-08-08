@@ -5,7 +5,7 @@ import { BASE_URL } from "@/constant";
 
 export const metadata: Metadata = {
   title: "Luxury Bathroom Trends: What's In And What's Out For 2024",
-  description: "",
+  description: "From checkerboard tile to moody marble, from stone floors to statement sinks and from rich reds to woody tones, Bathroom furnishings have come a long way. Now why is this upgrade quintessential? Ameliorating bathware can enhance both functionality and aesthetics.",
   metadataBase: new URL(`${BASE_URL}`),
   alternates: {
     canonical:

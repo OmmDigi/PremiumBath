@@ -5,7 +5,7 @@ import { BASE_URL } from "@/constant";
 
 export const metadata: Metadata = {
   title: "10 Must-Have Features for a Luxurious Bathroom Retreat",
-  description: "",
+  description: "Choosing extensive products makes your bathroom more susceptible to usage, the selection of quality materials is essential for a durable yet luxurious setup in your bathroom. Modern bathroom design setups depend on various aspects as the process of designing becomes more susceptible to high-quality products. Through appropriate management of customized features,",
   metadataBase: new URL(`${BASE_URL}`),
   alternates: {
     canonical:

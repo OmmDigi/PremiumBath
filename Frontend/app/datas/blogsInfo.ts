@@ -8,7 +8,7 @@ export const blogsLists: IBlogsItem[] = [
     route: "ultimate-guide-designing-dream-luxury-bathroom",
     description:
       "Discover the secrets to creating your ideal luxury bathroom with our comprehensive guide. From opulent fixtures to innovative layouts, unlock the key elements to design your dream sanctuary of relaxation and indulgence.",
-    bannerimg: BASE_URL + "/blog1image.webp",
+    bannerimg: "/blog1image.webp",
     date: "09 APR 2024",
     catgory: "BATHROOM DESIGN",
     author: "AUTHOR",
@@ -37,5 +37,17 @@ export const blogsLists: IBlogsItem[] = [
     catgory: "BATHROOM DESIGN",
     author: "AUTHOR",
     tags: ["BATHROOM DESIGN"],
+  },
+  {
+    id: "4",
+    title: "ELEVATE YOUR BATHROOM WITH PREMIUM BATHTUBS FROM PREMIUM BATHWARE IN KOLKATA",
+    route: "elevate-your-bathroom-with-premium-bathtubs-from-premium-bathware-in-kolkata",
+    description:
+      "From checkerboard tile to moody marble, from stone floors to statement sinks and from rich reds to woody tones, Bathroom furnishings have come a long way. Now why is this upgrade quintessential? Ameliorating bathware can enhance both functionality and aesthetics. New fixtures, like low-flow toilets and water-saving faucets, conserve resources and reduce utility bills.",
+    bannerimg: "/blogs/blog4.webp",
+    date: "08 AUG 2024",
+    catgory: "BATHROOM DESIGN",
+    author: "AUTHOR",
+    tags: ["BATHROOM DESIGN", "BATHTUBS"],
   },
 ];
